@@ -15,12 +15,12 @@ fi
 # exercise: write a script that prints whether it is 
 # morning or not
 
-echo "What is the time? Use 24 hours"
+echo "What is the time? (Use 24 hours)"
 read time
 
 
-if [ "$time" -le 11 ]; then
-   echo "It's sleepy times! (AKA morning)"
+if [ "$time" -ge 12 ]; then
+   echo "Night time is the right time!"
 else
-   echo "It's night"
+   echo "ZzZ time for sleeps (morning)"
 fi
